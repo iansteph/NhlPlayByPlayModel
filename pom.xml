@@ -6,7 +6,7 @@
 
   <groupId>iansteph.nhlp3.eventpublisher.model.nhl</groupId>
   <artifactId>NhlPlayByPlayModel</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
 
   <name>NhlPlayByPlayModel</name>
   <url>https://github.com/iansteph</url>
@@ -16,6 +16,14 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub iansteph Apache Maven Packages</name>
+      <url>https://maven.pkg.github.com/iansteph/NhlPlayByPlayModel</url>
+    </repository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
