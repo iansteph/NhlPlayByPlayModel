@@ -3,7 +3,6 @@ package iansteph.nhlp3.eventpublisher.model.nhl.livedata.plays.play;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import iansteph.nhlp3.eventpublisher.model.nhl.livedata.plays.play.about.Goals;
 
-import java.time.ZonedDateTime;
 import java.util.Objects;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -16,7 +15,7 @@ public class About {
     private String ordinalNum;
     private String periodTime;
     private String periodTimeRemaining;
-    private ZonedDateTime dateTime;
+    private String dateTime;
     private Goals goals;
 
     public int getEventIdx() {
@@ -75,11 +74,11 @@ public class About {
         this.periodTimeRemaining = periodTimeRemaining;
     }
 
-    public ZonedDateTime getDateTime() {
+    public String getDateTime() {
         return dateTime;
     }
 
-    public void setDateTime(final ZonedDateTime dateTime) {
+    public void setDateTime(final String dateTime) {
         this.dateTime = dateTime;
     }
 
