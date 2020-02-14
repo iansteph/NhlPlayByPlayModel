@@ -6,7 +6,7 @@
 
   <groupId>iansteph.nhlp3.eventpublisher.model.nhl</groupId>
   <artifactId>NhlPlayByPlayModel</artifactId>
-  <version>1.0</version>
+  <version>1.0.1</version>
 
   <name>NhlPlayByPlayModel</name>
   <url>https://github.com/iansteph</url>
