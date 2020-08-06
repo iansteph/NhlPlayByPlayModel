@@ -10,6 +10,7 @@ public class PlayPlayer {
 
     private Player player;
     private String playerType;
+    private Integer seasonTotal;
 
     public Player getPlayer() {
         return player;
@@ -27,11 +28,20 @@ public class PlayPlayer {
         this.playerType = playerType;
     }
 
+    public Integer getSeasonTotal() {
+        return seasonTotal;
+    }
+
+    public void setSeasonTotal(final Integer seasonTotal) {
+        this.seasonTotal = seasonTotal;
+    }
+
     @Override
     public String toString() {
         return "PlayPlayer{" +
                 "player=" + player +
                 ", playerType='" + playerType + '\'' +
+                ", seasonTotal='" + seasonTotal + '\'' +
                 '}';
     }
 
@@ -41,11 +51,12 @@ public class PlayPlayer {
         if (o == null || getClass() != o.getClass()) return false;
         PlayPlayer that = (PlayPlayer) o;
         return Objects.equals(player, that.player) &&
-                Objects.equals(playerType, that.playerType);
+                Objects.equals(playerType, that.playerType) &&
+                Objects.equals(seasonTotal, that.seasonTotal);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(player, playerType);
+        return Objects.hash(player, playerType, seasonTotal);
     }
 }

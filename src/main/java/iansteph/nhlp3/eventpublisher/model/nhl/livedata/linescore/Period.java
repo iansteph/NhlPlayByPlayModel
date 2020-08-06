@@ -3,15 +3,14 @@ package iansteph.nhlp3.eventpublisher.model.nhl.livedata.linescore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import iansteph.nhlp3.eventpublisher.model.nhl.livedata.linescore.period.Side;
 
-import java.time.ZonedDateTime;
 import java.util.Objects;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Period {
 
     private String periodType;
-    private ZonedDateTime startTime;
-    private ZonedDateTime endTime;
+    private String startTime;
+    private String endTime;
     private int num;
     private String ordinalNum;
     private Side home;
@@ -25,19 +24,19 @@ public class Period {
         this.periodType = periodType;
     }
 
-    public ZonedDateTime getStartTime() {
+    public String getStartTime() {
         return startTime;
     }
 
-    public void setStartTime(final ZonedDateTime startTime) {
+    public void setStartTime(final String startTime) {
         this.startTime = startTime;
     }
 
-    public ZonedDateTime getEndTime() {
+    public String getEndTime() {
         return endTime;
     }
 
-    public void setEndTime(final ZonedDateTime endTime) {
+    public void setEndTime(final String endTime) {
         this.endTime = endTime;
     }
 
